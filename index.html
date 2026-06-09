@@ -39,7 +39,10 @@
     .chef-circle img { width: 100%; height: 100%; object-fit: cover; }
 
     .hero-title { font-family: 'Amiri', serif; font-size: 5rem; font-weight: 900; color: #f8e3b0; text-shadow: 2px 2px 0px #3e2723, 0 0 20px #A67C00; margin: 0; }
-    .welcome-text { font-size: 1.8rem; margin: 15px 0; font-weight: bold; text-shadow: 2px 2px 4px rgba(0,0,0,0.8); }
+    .welcome-text { font-size: 1.8rem; margin: 15px 0 5px; font-weight: bold; text-shadow: 2px 2px 4px rgba(0,0,0,0.8); }
+    
+    /* تنسيق العنوان الجديد */
+    .location-text { font-size: 1.3rem; color: #f8e3b0; margin: 5px 0 15px; font-weight: normal; text-shadow: 1px 1px 3px rgba(0,0,0,0.8); display: flex; align-items: center; justify-content: center; gap: 5px; }
 
     #products { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; padding: 40px; }
     
@@ -67,6 +70,8 @@
         <div class="chef-circle"><img src="chef.jpg"></div>
         <h1 class="hero-title">مطبخ فاتن للمأكولات السورية</h1>
         <p class="welcome-text">تراثٌ من الأصالة.. يذوبُ في فمِك بكلّ حبّ.</p>
+        <!-- إضافة العنوان هنا -->
+        <p class="location-text">📍 القصيم / البدائع</p>
     </div>
 
     <div id="products">
@@ -77,7 +82,7 @@
             }
         </script>
         
-        <!-- قائمة الأصناف الجديدة مرتبة من 1 إلى 8 -->
+        <!-- قائمة الأصناف مرتبة من 1 إلى 8 -->
         <div class="card"><img src="1.jpg"><h3>رز بالبازلا</h3><p>أرز شرقي فاخر مطبوخ مع البازلاء الغضة واللحم المفروم والمكسرات المقرمشة.</p><a class="order-btn" href="javascript:order('رز بالبازلا')">اطلب الآن</a></div>
         <div class="card"><img src="2.jpg"><h3>كوسا باللبن</h3><p>حبات الكوسا المحشية باللحم المفروم والمطهوة بعبق اللبن الرائب المخملي الثمين.</p><a class="order-btn" href="javascript:order('كوسا باللبن')">اطلب الآن</a></div>
         <div class="card"><img src="3.jpg"><h3>كبة باللبن</h3><p>أقراص الكبة الشامية المقرمشة مغمورة باللبن المطبوخ الساخن محشيه باللحم المفروم وبصل بالمكسرات .</p><a class="order-btn" href="javascript:order('كبة باللبن')">اطلب الآن</a></div>
@@ -125,4 +130,5 @@
 <button class="top-btn" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">⬆️</button>
 
 </body>
-  </html>
+</html>
+ 
